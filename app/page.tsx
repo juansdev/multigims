@@ -164,8 +164,8 @@ export default function Home() {
               </div>
             </div>
             <p className="text-gray-400 text-sm">
-              Especialista en desarrollo de juegos con más de 5 años de experiencia en Roblox y Unity. Apasionado por
-              crear experiencias inmersivas y construir comunidades.
+              Especialista en gestión y diseño con más de 4 años de experiencia. Apasionado por ofrecer más que una
+              simple experiencia a los clientes.
             </p>
           </div>
 
