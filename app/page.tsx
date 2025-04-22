@@ -50,14 +50,14 @@ export default function Home() {
 
       {/* Hero Section */}
       <section id={"inicio"}
-               className="px-20 mx-auto py-12 grid md:grid-cols-2 gap-8 relative bg-no-repeat bg-cover bg-center background"
+               className="px-20 mx-auto py-12 lg:grid lg:grid-cols-2 gap-8 relative bg-no-repeat bg-cover bg-center background"
                style={{
                  "backgroundImage": "url('/background.png')"
                }}>
         <div className="relative z-10">
           <div className="text-purple-500 text-sm mb-4">
             <div
-                className="border bg-violet-900/30 border-purple-500 px-4 py-2 rounded-full flex flex-row items-start justify-start gap-1 size-max">
+                className="border bg-violet-900/30 border-purple-500 px-4 py-2 rounded-full flex flex-row items-start justify-start gap-1 md:size-max">
               <Zap className={"inline-block"} width={20} height={20} style={{"strokeWidth": 1}}/>
               <span className={"font-bold"}>El servidor Discord #1 para desarrolladores y programadores tech</span>
             </div>
