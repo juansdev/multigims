@@ -50,7 +50,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section id={"inicio"}
-               className="px-20 mx-auto py-12 lg:grid lg:grid-cols-2 gap-8 relative bg-no-repeat bg-cover bg-center background"
+               className="lg:px-20 px-10 mx-auto py-12 lg:grid lg:grid-cols-2 gap-8 relative bg-no-repeat bg-cover bg-center background"
                style={{
                  "backgroundImage": "url('/background.png')"
                }}>
