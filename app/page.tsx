@@ -43,21 +43,26 @@ export default function Home() {
             </Link>
           </nav>
           <Link href={"https://discord.gg/BZMarT7Fcf"} target="_blank" rel="noopener noreferrer"
-                className="button p-3 bg-purple-600 hover:bg-purple-700 text-white rounded-md">Unirse al Discord</Link>
+                className="button p-3 bg-purple-600 hover:bg-purple-700 text-white rounded-md font-bold">Unirse al
+            Discord</Link>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section id={"inicio"} className="container mx-auto py-12 grid md:grid-cols-2 gap-8 relative">
+      <section id={"inicio"}
+               className="px-20 mx-auto py-12 grid md:grid-cols-2 gap-8 relative bg-no-repeat bg-cover bg-center background"
+               style={{
+                 "backgroundImage": "url('/background.png')"
+               }}>
         <div className="relative z-10">
           <div className="text-purple-500 text-sm mb-4">
             <div
-                className="border border-purple-500 px-4 py-2 rounded-full flex flex-row items-start justify-start gap-1 size-max">
+                className="border bg-violet-900/30 border-purple-500 px-4 py-2 rounded-full flex flex-row items-start justify-start gap-1 size-max">
               <Zap className={"inline-block"} width={20} height={20} style={{"strokeWidth": 1}}/>
               <span className={"font-bold"}>El servidor Discord #1 para desarrolladores y programadores tech</span>
             </div>
           </div>
-          <div className="text-4xl md:text-6xl font-bold mb-4 flex flex-col gap-1">
+          <div className="text-4xl md:text-6xl font-bold mb-4 flex flex-col gap-2">
             <span
                 className="bg-gradient-to-r from-purple-500 via-sky-500 to-blue-500 inline-block text-transparent bg-clip-text">Construye el futuro</span>
             <span>tecnológico con</span>
@@ -83,10 +88,24 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-2">
             <div className="flex -space-x-2">
-              <div className="w-8 h-8 rounded-full bg-purple-600 border-2 border-[#0a0a14]"></div>
-              <div className="w-8 h-8 rounded-full bg-blue-600 border-2 border-[#0a0a14]"></div>
-              <div className="w-8 h-8 rounded-full bg-green-600 border-2 border-[#0a0a14]"></div>
-              <div className="w-8 h-8 rounded-full bg-gray-700 border-2 border-[#0a0a14]"></div>
+              <div className="w-8 h-8 rounded-full border-2 border-[#0a0a14] bg-no-repeat bg-cover bg-center" style={{
+                "backgroundImage": "url('/1.png')"
+              }}></div>
+              <div
+                  className="w-8 h-8 rounded-full bg-blue-600 border-2 border-[#0a0a14] bg-no-repeat bg-cover bg-center"
+                  style={{
+                    "backgroundImage": "url('/2.png')"
+                  }}></div>
+              <div
+                  className="w-8 h-8 rounded-full bg-green-600 border-2 border-[#0a0a14] bg-no-repeat bg-cover bg-center"
+                  style={{
+                    "backgroundImage": "url('/3.png')"
+                  }}></div>
+              <div
+                  className="w-8 h-8 rounded-full bg-gray-700 border-2 border-[#0a0a14] bg-no-repeat bg-cover bg-center"
+                  style={{
+                    "backgroundImage": "url('/4.png')"
+                  }}></div>
             </div>
             <div className="text-sm flex flex-row gap-1">
               <span className={"text-gray-400"}>Únete a</span>
@@ -96,10 +115,10 @@ export default function Home() {
           </div>
         </div>
         <div
-            className="bg-gradient-to-br from-purple-900/20 to-purple-600/20 rounded-xl overflow-hidden border border-purple-900/50 h-full flex flex-col items-center justify-center">
+            className="bg-gradient-to-br from-blue-600 to-cyan-600 rounded-xl overflow-hidden border border-purple-900/50 h-full flex flex-col items-center justify-center">
           <div className={"bg-no-repeat bg-cover bg-center relative h-full rounded"}
                style={{
-                 "backgroundImage": "url('/placeholder.svg?height=400&width=500')",
+                 "backgroundImage": "url('/portada.webp')",
                  "width": "98%",
                  "height": "98%"
                }}>
@@ -136,7 +155,9 @@ export default function Home() {
           {/* Team Member 1 */}
           <div className="bg-[#0f0f1e] p-6 rounded-xl border border-purple-900/30 flex flex-col gap-4">
             <div className={"flex flex-row gap-3"}>
-              <div className="w-12 h-12 rounded-full bg-purple-600 flex-shrink-0"></div>
+              <div className="w-12 h-12 rounded-full flex-shrink-0 bg-no-repeat bg-cover bg-center" style={{
+                "backgroundImage": "url('/10.png')"
+              }}></div>
               <div>
                 <h3 className="font-bold text-lg">D.John</h3>
                 <p className="text-purple-500 text-sm mb-2">@.don.john.</p>
@@ -151,7 +172,9 @@ export default function Home() {
           {/* Team Member 2 */}
           <div className="bg-[#0f0f1e] p-6 rounded-xl border border-purple-900/30 flex flex-col gap-4">
             <div className={"flex flex-row gap-3"}>
-              <div className="w-12 h-12 rounded-full bg-purple-600 flex-shrink-0"></div>
+              <div className="w-12 h-12 rounded-full flex-shrink-0 bg-no-repeat bg-cover bg-center" style={{
+                "backgroundImage": "url('/20.png')"
+              }}></div>
               <div className={"flex flex-col gap-1"}>
                 <h3 className="font-bold text-lg">cirocast14</h3>
                 <p className="text-purple-500 text-sm mb-2">@cirocast14</p>
@@ -166,7 +189,9 @@ export default function Home() {
           {/* Team Member 3 */}
           <div className="bg-[#0f0f1e] p-6 rounded-xl border border-purple-900/30 flex flex-col gap-4">
             <div className={"flex flex-row gap-3"}>
-              <div className="w-12 h-12 rounded-full bg-purple-600 flex-shrink-0"></div>
+              <div className="w-12 h-12 rounded-full flex-shrink-0 bg-no-repeat bg-cover bg-center" style={{
+                "backgroundImage": "url('/30.png')"
+              }}></div>
               <div>
                 <h3 className="font-bold text-lg">DragønX</h3>
                 <p className="text-purple-500 text-sm mb-2">@dragonx72</p>
@@ -338,7 +363,7 @@ export default function Home() {
                 className="bg-gradient-to-br from-purple-900/20 to-purple-600/20 rounded-xl overflow-hidden border border-purple-900/50 h-full flex flex-col items-center justify-center">
               <div className={"bg-no-repeat bg-cover bg-center relative h-full rounded"}
                    style={{
-                     "backgroundImage": "url('/placeholder.svg?height=400&width=500')",
+                     "backgroundImage": "url('/proyectos.jpg')",
                      "width": "98%",
                      "height": "98%"
                    }}>
@@ -430,21 +455,27 @@ export default function Home() {
             <h3 className="font-bold mb-4">Fundadores</h3>
             <div className="flex flex-row flex-wrap items-center justify-start gap-5">
               <div className="flex items-center gap-2">
-                <div className="w-10 h-10 rounded-full bg-purple-600"></div>
+                <div className="w-10 h-10 rounded-full bg-no-repeat bg-cover bg-center" style={{
+                  "backgroundImage": "url('/10.png')"
+                }}></div>
                 <div className={"flex flex-col items-start justify-center"}>
                   <span>D.John</span>
                   <span className="text-purple-500 text-sm">@.don.john.</span>
                 </div>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-10 h-10 rounded-full bg-purple-600"></div>
+                <div className="w-10 h-10 rounded-full bg-no-repeat bg-cover bg-center" style={{
+                  "backgroundImage": "url('/20.png')"
+                }}></div>
                 <div className={"flex flex-col items-start justify-center"}>
                   <span>cirocast14</span>
                   <span className="text-purple-500 text-sm">@cirocast14</span>
                 </div>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-10 h-10 rounded-full bg-purple-600"></div>
+                <div className="w-10 h-10 rounded-full bg-no-repeat bg-cover bg-center" style={{
+                  "backgroundImage": "url('/30.png')"
+                }}></div>
                 <div className={"flex flex-col items-start justify-center"}>
                   <span>DragønX</span>
                   <span className="text-purple-500 text-sm">@dragonx72</span>
