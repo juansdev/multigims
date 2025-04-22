@@ -18,6 +18,9 @@ export const metadata = {
         title: 'MultiGims - Comunidad de Desarrollo Tecnológico',
         description: 'Una comunidad de profesionales tech en un servidor Discord donde colaboramos en proyectos de desarrollo web, móvil, gaming, IA y más.',
         images: ['/portada2.jpg'],
+    },
+    icons: {
+        icon: '/favicon.ico'
     }
 }
 
