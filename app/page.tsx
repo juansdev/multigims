@@ -1,7 +1,7 @@
 import Link from "next/link"
-import {Button} from "@/components/ui/button"
 import {
   ArrowRight,
+  BadgeCheck,
   Briefcase,
   ChevronRight,
   Code,
@@ -15,6 +15,7 @@ import {
   Users,
   Zap
 } from "lucide-react"
+import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
 
 export default function Home() {
   return (
@@ -213,10 +214,32 @@ export default function Home() {
           </h2>
           <div className={"bg-gradient-to-r from-purple-500 via-sky-500 to-blue-500 h-1 rounded"}
                style={{"width": "10%"}}></div>
-          <p className="max-w-3xl mx-auto text-gray-400 mb-10">
+          <p className="max-w-3xl mx-auto text-gray-400">
             Únete a nuestra comunidad de creadores y desarrolladores. Buscamos talentos en diversas áreas para colaborar
             y crecer en nuestros proyectos.
           </p>
+          <Card className={"w-full bg-[#0f0f1e]"}>
+            <CardHeader>
+              <CardTitle>Requisitos Generales</CardTitle>
+            </CardHeader>
+            <CardContent className={"mt-3"}>
+              <div className={"grid grid-cols-2 gap-3"}>
+                <div className={"flex flex-row gap-3"}>
+                  <BadgeCheck className={"inline-block"}/> Tener más de 15 años (flexible según madurez y experiencia)
+                </div>
+                <div className={"flex flex-row gap-3"}>
+                  <BadgeCheck className={"inline-block"}/> Contar con tiempo y compromiso para trabajar en equipo
+                </div>
+                <div className={"flex flex-row gap-3"}>
+                  <BadgeCheck className={"inline-block"}/> Ser creativo/a, proactivo/a y con buena comunicación
+                </div>
+                <div className={"flex flex-row gap-3"}>
+                  <BadgeCheck className={"inline-block"}/>Tener conocimientos básicos o avanzados en el área que te
+                  interesa
+                </div>
+              </div>
+            </CardContent>
+          </Card>
 
           <div className="grid md:grid-cols-3 gap-6">
             {/* Vacancy 1 */}
@@ -228,7 +251,11 @@ export default function Home() {
               <p className="text-gray-400 text-sm mb-4">
                 Buscamos personas con experiencia para colaborar y crear juegos.
               </p>
-              <Link href="#" className="text-purple-500 text-sm flex items-center">
+              <Link
+                  href={"https://docs.google.com/forms/d/e/1FAIpQLSdMEZ8PWRBRB4wBgWgg0bq1VKRaMT07b_mz20NbUpV2B5ZvDw/viewform"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-purple-500 text-sm flex items-center">
                 Postularme <ChevronRight size={16}/>
               </Link>
             </div>
@@ -242,7 +269,11 @@ export default function Home() {
               <p className="text-gray-400 text-sm mb-4">
                 Buscamos personas con experiencia para colaborar y crear juegos.
               </p>
-              <Link href="#" className="text-purple-500 text-sm flex items-center">
+              <Link
+                  href={"https://docs.google.com/forms/d/e/1FAIpQLSdMEZ8PWRBRB4wBgWgg0bq1VKRaMT07b_mz20NbUpV2B5ZvDw/viewform"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-purple-500 text-sm flex items-center">
                 Postularme <ChevronRight size={16}/>
               </Link>
             </div>
@@ -256,7 +287,11 @@ export default function Home() {
               <p className="text-gray-400 text-sm mb-4">
                 Buscamos personas con experiencia para colaborar y crear juegos.
               </p>
-              <Link href="#" className="text-purple-500 text-sm flex items-center">
+              <Link
+                  href={"https://docs.google.com/forms/d/e/1FAIpQLSdMEZ8PWRBRB4wBgWgg0bq1VKRaMT07b_mz20NbUpV2B5ZvDw/viewform"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-purple-500 text-sm flex items-center">
                 Postularme <ChevronRight size={16}/>
               </Link>
             </div>
@@ -270,7 +305,11 @@ export default function Home() {
               <p className="text-gray-400 text-sm mb-4">
                 Buscamos personas con experiencia para colaborar y crear juegos.
               </p>
-              <Link href="#" className="text-purple-500 text-sm flex items-center">
+              <Link
+                  href={"https://docs.google.com/forms/d/e/1FAIpQLSdMEZ8PWRBRB4wBgWgg0bq1VKRaMT07b_mz20NbUpV2B5ZvDw/viewform"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-purple-500 text-sm flex items-center">
                 Postularme <ChevronRight size={16}/>
               </Link>
             </div>
@@ -284,7 +323,11 @@ export default function Home() {
               <p className="text-gray-400 text-sm mb-4">
                 Buscamos personas con experiencia para colaborar y crear juegos.
               </p>
-              <Link href="#" className="text-purple-500 text-sm flex items-center">
+              <Link
+                  href={"https://docs.google.com/forms/d/e/1FAIpQLSdMEZ8PWRBRB4wBgWgg0bq1VKRaMT07b_mz20NbUpV2B5ZvDw/viewform"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-purple-500 text-sm flex items-center">
                 Postularme <ChevronRight size={16}/>
               </Link>
             </div>
@@ -298,7 +341,11 @@ export default function Home() {
               <p className="text-gray-400 text-sm mb-4">
                 Buscamos personas con experiencia para colaborar y crear juegos.
               </p>
-              <Link href="#" className="text-purple-500 text-sm flex items-center">
+              <Link
+                  href={"https://docs.google.com/forms/d/e/1FAIpQLSdMEZ8PWRBRB4wBgWgg0bq1VKRaMT07b_mz20NbUpV2B5ZvDw/viewform"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-purple-500 text-sm flex items-center">
                 Postularme <ChevronRight size={16}/>
               </Link>
             </div>
@@ -312,7 +359,11 @@ export default function Home() {
               <p className="text-gray-400 text-sm mb-4">
                 Buscamos personas con experiencia para colaborar y crecer juntos.
               </p>
-              <Link href="#" className="text-purple-500 text-sm flex items-center">
+              <Link
+                  href={"https://docs.google.com/forms/d/e/1FAIpQLSdMEZ8PWRBRB4wBgWgg0bq1VKRaMT07b_mz20NbUpV2B5ZvDw/viewform"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-purple-500 text-sm flex items-center">
                 Postularme <ChevronRight size={16}/>
               </Link>
             </div>
@@ -337,9 +388,13 @@ export default function Home() {
               En MultiGims valoramos la experiencia única. Propón tu especialidad y lidera a nuestros proyectos
               tecnológicos.
             </p>
-            <Button className="bg-green-600 hover:bg-green-700 text-white rounded-md flex items-center gap-2">
+            <Link
+                href={"https://docs.google.com/forms/d/e/1FAIpQLSdMEZ8PWRBRB4wBgWgg0bq1VKRaMT07b_mz20NbUpV2B5ZvDw/viewform"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="button p-3 w-fit bg-green-600 hover:bg-green-700 text-white rounded-md flex items-center gap-2">
               Presentar propuesta <ChevronRight size={16}/>
-            </Button>
+            </Link>
           </div>
         </div>
       </section>
